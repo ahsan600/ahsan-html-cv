@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Muhammad Ahsan CV</title>
+	<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Google Font: Inter -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Favicon -->
+	<link rel="icon" href="assets/images/Profile-white.png" type="image/png">
+
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css">
+
+	<!-- import jquery for pdf -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="assets/js/index.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
+
+
+</head>
+
+<style>
+	body {
+		font-family: 'Inter', sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color: #58677c;
+	}
+
+	.project-link {
+		color: inherit;
+		/* This makes the link inherit the color of its parent element */
+		text-decoration: none;
+		/* Removes the default underline */
+	}
+
+	.github-badge {
+		width: 300px;
+		background: white;
+		border: 1px solid #d0d7de;
+		border-radius: 8px;
+		overflow: hidden;
+		text-decoration: none;
+		color: inherit;
+		display: block;
+		transition: box-shadow 0.2s;
+	}
+
+	.github-badge:hover {
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+		text-decoration: none;
+	}
+
+	.github-header {
+		background: #24292f;
+		padding: 12px 16px;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.github-logo {
+		width: 24px;
+		height: 24px;
+		fill: white;
+	}
+
+	.github-title {
+		color: white;
+		font-size: 16px;
+		font-weight: 700;
+		margin: 0;
+		letter-spacing: 0.3px;
+	}
+
+	.github-body {
+		padding: 24px 16px 16px 16px;
+		text-align: start;
+	}
+
+	.github-avatar {
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		margin-bottom: 16px;
+		border: none;
+	}
+
+	.github-name {
+		font-size: 16px;
+		font-weight: 600;
+		color: #000000;
+		margin: 0 0 4px 0;
+		line-height: 1.2;
+	}
+
+	.github-username {
+		font-size: 16px;
+		color: #666666;
+		margin: 0 0 16px 0;
+		font-weight: 400;
+	}
+
+	.github-bio {
+		font-size: 14px;
+		color: #24292f;
+		margin: 0 0 16px 0;
+		line-height: 1.5;
+	}
+
+	.github-stats {
+		display: flex;
+		gap: 16px;
+		font-size: 14px;
+		margin-bottom: 16px;
+	}
+
+	.github-stat {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		color: #57606a;
+	}
+
+	.github-stat strong {
+		color: #24292f;
+	}
+
+	.github-button {
+		width: 100%;
+		padding: 8px 16px;
+		background: #24292f;
+		color: white;
+		border: none;
+		border-radius: 6px;
+		font-size: 14px;
+		font-weight: 500;
+		text-align: center;
+		cursor: pointer;
+		transition: background 0.2s;
+	}
+
+	.github-button:hover {
+		background: #32383f;
+	}
+
+	.demo-container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.badge-comparison {
+		display: flex;
+		gap: 30px;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 40px 0;
+	}
+
+	/* Enhanced Projects Styling */
+	.agentic-description {
+		background: #f0f4f8;
+		border-left: 3px solid #434E5E;
+		border-radius: 4px;
+	}
+	.project-item {
+		transition: all 0.2s ease;
+		padding: 4px 8px;
+		border-radius: 6px;
+		margin-bottom: 0.2rem;
+	}
+	.project-item:hover {
+		background: #f8f9fa;
+		transform: translateX(4px);
+	}
+	.project-link {
+		display: flex;
+		align-items: center;
+		text-decoration: none !important;
+	}
+	.project-icon-box {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		background: #fff;
+		border: 1px solid #e9ecef;
+		border-radius: 4px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+		margin-right: 10px;
+	}
+	.project-name {
+		font-size: 0.85rem;
+		font-weight: 600;
+		line-height: 1.2;
+		color: #212529;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.project-tag {
+		font-size: 0.7rem;
+		color: #6c757d;
+		font-weight: 400;
+	}
+	.project-arrow {
+		opacity: 0;
+		transition: all 0.2s ease;
+		color: #434E5E;
+		font-size: 0.7rem;
+	}
+	.project-item:hover .project-arrow {
+		opacity: 1;
+		transform: translateX(3px);
+	}
+
+	/* Innovative Dot-Level Matrix Styling */
+	.skill-group {
+		margin-bottom: 1.8rem;
+	}
+	.skill-group-title {
+		font-size: 0.85rem;
+		font-weight: 700;
+		color: #434E5E;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		padding-bottom: 8px;
+		border-bottom: 1px solid #e9ecef;
+		margin-bottom: 12px;
+	}
+	.skill-group-title i {
+		width: 20px;
+		color: #434E5E;
+	}
+	.skill-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 6px;
+	}
+	.skill-label {
+		font-size: 0.82rem;
+		font-weight: 500;
+		color: #58677c;
+	}
+	.skill-dots {
+		display: flex;
+		gap: 4px;
+	}
+	.dot {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: #e9ecef;
+	}
+	.dot.filled {
+		background: #434E5E;
+	}
+	.dot.expert {
+		background: #434E5E;
+	}
+	/* Subtle animations */
+	.skill-row:hover .skill-label {
+		color: #434E5E;
+	}
+	.skill-row:hover .dot.filled {
+		background: #363f4c;
+	}
+
+	/* Premium Tech Chips for Work Experience */
+	.tech-chips-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.tech-chip {
+		background: rgba(67, 78, 94, 0.05);
+		border: 1px solid rgba(67, 78, 94, 0.1);
+		padding: 3px 12px;
+		border-radius: 20px;
+		font-size: 0.72rem;
+		font-weight: 600;
+		color: #434E5E;
+		transition: all 0.2s ease;
+		display: flex;
+		align-items: center;
+		box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+	}
+	.tech-chip:hover {
+		background: rgba(67, 78, 94, 0.1);
+		border-color: #434E5E;
+		color: #434E5E;
+		transform: translateY(-1px);
+		box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+	}
+	.tech-heading {
+		font-size: 0.85rem;
+		color: #434E5E;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		margin-top: 1.2rem;
+		margin-bottom: 0.8rem;
+	}
+	.tech-heading i {
+		font-size: 0.75rem;
+		opacity: 0.8;
+	}
+
+	/* Achievement Bullets Modernization */
+	.resume-timeline-item-desc ul {
+		list-style: none;
+		padding-left: 1.2rem;
+	}
+	.resume-timeline-item-desc ul li {
+		position: relative;
+		margin-bottom: 0.6rem;
+		font-size: 0.88rem;
+		line-height: 1.5;
+	}
+	.resume-timeline-item-desc ul li::before {
+		content: "";
+		position: absolute;
+		left: -1.2rem;
+		top: 0.6rem;
+		width: 4px;
+		height: 4px;
+		background: #434E5E;
+		border-radius: 50%;
+		opacity: 0.6;
+	}
+	/* Print Compatibility & Perfection */
+	@media print {
+		.tech-chip, .dot.filled, .project-icon-box {
+			-webkit-print-color-adjust: exact !important;
+			print-color-adjust: exact !important;
+		}
+		.resume-wrapper {
+			padding: 0 !important;
+			box-shadow: none !important;
+		}
+	}
+
+	/* Summary Refinement */
+	.summary-section .resume-section-content {
+		line-height: 1.7;
+		font-size: 0.95rem;
+		color: #4a5568;
+	}
+
+	/* OnSite Tag Upgrade */
+	.remote-tag {
+		background: rgba(67, 78, 94, 0.08);
+		color: #434E5E;
+		font-size: 0.75rem;
+		font-weight: 600;
+		padding: 4px 12px;
+		border-radius: 20px;
+		border: 1px solid rgba(67, 78, 94, 0.15);
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	/* Project Icon Unification */
+	.project-icon-box i {
+		color: #434E5E !important;
+		opacity: 0.9;
+	}
+
+	/* Sidebar Details Polish */
+	.resume-degree, .resume-cert-name {
+		font-size: 0.9rem;
+		color: #2D3748;
+		margin-bottom: 2px;
+	}
+	.resume-degree-org, .resume-degree-time {
+		font-size: 0.8rem;
+		color: #718096;
+	}
+
+	/* New Card-Based Skills Styling */
+	.skills-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.skills-category {
+		background: #fff;
+	}
+	.skills-category__title {
+		font-size: 0.9rem;
+		font-weight: 700;
+		color: #434E5E;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin-bottom: 1rem;
+		padding-bottom: 0.5rem;
+		border-bottom: 1px solid #e9ecef;
+	}
+	/* 2-Column Skills List Styling */
+	.skills-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+	.skills-list-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
+	.skills-category {
+		margin-bottom: 0.5rem;
+	}
+	.skills-category__title {
+		font-size: 0.8rem;
+		font-weight: 700;
+		color: #434E5E;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin-bottom: 0.8rem;
+		padding-bottom: 0.4rem;
+		border-bottom: 1px solid #e9ecef;
+	}
+	.skill-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 8px;
+		padding-bottom: 2px;
+		min-width: 0; /* Prevents overflow */
+	}
+	.skill-label {
+		font-size: 0.75rem;
+		font-weight: 500;
+		color: #58677c;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		margin-right: 8px;
+	}
+	.skill-dots {
+		display: flex;
+		gap: 3px;
+		flex-shrink: 0;
+	}
+	.dot {
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background: #e9ecef;
+	}
+	.dot.filled {
+		background: #434E5E;
+	}
+	.skill-row:hover .skill-label {
+		color: #434E5E;
+	}
+	.skill-row:hover .dot.filled {
+		background: #363f4c;
+	}
+
+	/* Skill Icon Colors */
+	[data-skill-color="cursor"] { color: #24292f; }
+	[data-skill-color="google-antigravity"] { color: #4285F4; }
+	[data-skill-color="chatgpt"] { color: #10a37f; }
+	[data-skill-color="gemini"] { color: #1a73e8; }
+	[data-skill-color="claude"] { color: #d97757; }
+	[data-skill-color="perplexity"] { color: #39b1a5; }
+	[data-skill-color="copilot"] { color: #24292f; }
+	[data-skill-color="openrouter"] { color: #6e40c9; }
+	[data-skill-color="openai"] { color: #412991; }
+	[data-skill-color="deepseek"] { color: #4c6ef5; }
+	[data-skill-color="javascript"] { color: #f7df1e; }
+	[data-skill-color="typescript"] { color: #3178c6; }
+	[data-skill-color="black"] { color: #000000; }
+	[data-skill-color="react"] { color: #61dafb; }
+	[data-skill-color="react-native"] { color: #61dafb; }
+	[data-skill-color="redux"] { color: #764abc; }
+	[data-skill-color="zustand"] { color: #433e38; }
+	[data-skill-color="html"] { color: #e34f26; }
+	[data-skill-color="css"] { color: #1572b6; }
+	[data-skill-color="sass"] { color: #cc6699; }
+	[data-skill-color="tailwind"] { color: #06b6d4; }
+	[data-skill-color="shadcn"] { color: #000000; }
+	[data-skill-color="bootstrap"] { color: #7952b3; }
+	[data-skill-color="nodejs"] { color: #339933; }
+	[data-skill-color="nestjs"] { color: #e0234e; }
+	[data-skill-color="vapi"] { color: #FF5733; }
+	[data-skill-color="twilio"] { color: #f22f46; }
+	[data-skill-color="stripe"] { color: #008cdd; }
+	[data-skill-color="graphql"] { color: #e10098; }
+	[data-skill-color="express"] { color: #000000; }
+	[data-skill-color="rest"] { color: #434E5E; }
+	[data-skill-color="websocket"] { color: #010101; }
+	[data-skill-color="mongodb"] { color: #47a248; }
+	[data-skill-color="mysql"] { color: #4479a1; }
+	[data-skill-color="postgresql"] { color: #336791; }
+	[data-skill-color="mongoose"] { color: #880000; }
+	[data-skill-color="prisma"] { color: #2d3748; }
+	[data-skill-color="sequelize"] { color: #52b0e7; }
+	[data-skill-color="drizzle"] { color: #c5f200; }
+	[data-skill-color="trpc"] { color: #2596be; }
+	[data-skill-color="firebase"] { color: #ffca28; }
+	[data-skill-color="clerk"] { color: #6c47ff; }
+	[data-skill-color="pm2"] { color: #2b0374; }
+	[data-skill-color="vps"] { color: #434e5e; }
+	[data-skill-color="docker"] { color: #2496ed; }
+	[data-skill-color="ec2"] { color: #ff9900; }
+	[data-skill-color="sqs"] { color: #ff9900; }
+	[data-skill-color="bullmq"] { color: #d82253; }
+	[data-skill-color="redis"] { color: #dc382d; }
+	[data-skill-color="git"] { color: #f05032; }
+	[data-skill-color="npm"] { color: #cb3837; }
+	[data-skill-color="puppeteer"] { color: #40b5a4; }
+	[data-skill-color="swagger"] { color: #85ea2d; }
+	[data-skill-color="postman"] { color: #ff6c37; }
+	[data-skill-color="vscode"] { color: #007acc; }
+	[data-skill-color="monorepo"] { color: #434e5e; }
+</style>
+
+<body>
+
+	<div class="position-fixed top-0 end-0 m-3 p-1 mt-4 bg-transparent d-none d-xl-block" style="z-index: 1000;">
+		<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
+			data-type="VERTICAL" data-vanity="muhammad-ahsan-b9b450242" data-version="v1">
+			<a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/muhammad-ahsan-b9b450242?trk=profile-badge"></a>
+		</div>
+	</div>
+
+	<div class="position-fixed bottom-0 end-0 m-3 p-1 bg-transparent d-none d-xl-block" style="z-index: 1000;">
+		<div>
+			<a href="https://github.com/ahsan600" target="_blank" class="github-badge">
+				<div class="github-header">
+					<svg class="github-logo" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd"
+							d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+						</path>
+					</svg>
+					<span class="github-title">GitHub</span>
+				</div>
+				<div class="github-body">
+					<img src="https://github.com/ahsan600.png" alt="Muhammad Ahsan" class="github-avatar">
+					<h3 class="github-name">Muhammad Ahsan</h3>
+					<p class="github-username">@ahsan600</p>
+					<p class="github-bio">AI-Powered Software Engineer | Building Intelligent Full-Stack Products</p>
+					<div class="github-button">View Profile</div>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<article class="resume-wrapper text-center position-relative">
+		<div id="resume-download" class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
+			<header class="resume-header pt-4 pt-md-0">
+				<div class="row">
+					<div class="col-block col-md-auto resume-picture-holder text-center text-md-start">
+						<img class="picture" src="assets/images/Profile-white.png" alt="">
+					</div><!--//col-->
+					<div class="col">
+						<!-- margin btw 2 div no margin -->
+						<div class="row pt-3 align-items-start justify-content-between flex-nowrap mx-2 my-1">
+							<div class="primary-info col-auto">
+								<h1 class="name mt-0 mb-1 text-white text-uppercase" style="font-weight: 700; letter-spacing: 1px;">Muhammad Ahsan</h1>
+								<div class="mb-3 d-flex align-items-center flex-wrap gap-2">
+									<span class="opacity-90">AI-Powered Full-Stack Software Engineer</span>
+
+									<span class="remote-tag">
+										<i class="fas fa-satellite-dish me-1" style="font-size: 0.6rem;"></i> OnSite
+									</span>
+								</div>
+
+
+								<ul class="list-unstyled">
+									<li class="mb-2"><a class="text-link" href="mailto:imahsan.work@gmail.com"><i
+												class="fas fa-envelope fa-fw me-2"></i>imahsan.work@gmail.com</a>
+									</li>
+									<li class="mb-2"><a class="text-link" target="_blank"
+											href="https://www.google.com/maps/d/u/0/viewer?mid=10ah-6hP9XdfIyc-bFLO-YaOPaw8&hl=en_US"><i
+												class="fas fa-map-marker-alt fa-fw me-2"></i>Multan,
+											Pakistan</a></li>
+									<li><a class="text-link" target="_blank"
+											href="https://web.whatsapp.com/send?phone=+923006593229"><i
+												class="fas fa-mobile-alt fa-fw me-2"></i>+92
+											300 6593229</a></li>
+								</ul>
+							</div><!--//primary-info-->
+							<div class="secondary-info col-auto mt-3">
+								<ul class="resume-social list-unstyled">
+									<li class="mb-3"><a class="text-link" target="_blank"
+											href="https://www.linkedin.com/in/muhammad-ahsan-b9b450242/"><span
+												class="fa-container text-center me-2"><i
+													class="fab fa-linkedin-in fa-fw"></i></span>Linkedin</a>
+									</li>
+									<li class="mb-3"><a class="text-link" target="_blank"
+											href="https://www.github.com/ahsan600"><span
+												class="fa-container text-center me-2"><i
+													class="fab fa-github-alt fa-fw"></i></span>Github</a>
+									</li>
+
+									<li class="mb-3"><a class="text-link" target="_blank"
+											href="https://imahsan.netlify.app/"><span
+												class="fa-container text-center me-2"><i
+													class="fas fa-globe"></i></span>Portfolio</a></li>
+								</ul>
+							</div><!--//secondary-info-->
+						</div><!--//row-->
+					</div><!--//col-->
+				</div><!--//row-->
+			</header>
+			<div class="resume-body p-5">
+				<section class="resume-section summary-section mb-5">
+					<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
+					<div class="resume-section-content">
+						Versatile Full Stack Developer with 2+ years of hands-on experience delivering scalable, high-performance web applications. Proficient in modern technologies including React.js, React Native, Next.js, Nest.js, TypeScript, PostgreSQL (Drizzle), Firebase, and Tailwind CSS. Adept in building robust systems with tRPC, Clerk Authentication, Stripe integration, and monorepo architectures. Demonstrated ability to write clean, reusable code with Git and contribute to end-to-end solutions, including a custom dental lab management platform.
+					</div>
+				</section><!--//summary-section-->
+				<div class="row">
+					<div class="col-lg-9">
+						<section class="resume-section experience-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience</h2>
+							<div class="resume-section-content">
+
+								<!-- SparkoSol -->
+								<div class="resume-timeline-no-line position-relative">
+									<article class="resume-timeline-item position-relative pb-5">
+										<div class="resume-timeline-item-header mb-2">
+											<div class="d-flex flex-column flex-md-row">
+												<div class="d-flex" style="gap: 8px">
+													<h3 class="resume-position-title font-weight-bold mb-1">Full-Stack Developer</h3>
+													<span> (OnSite)</span>
+												</div>
+												<div class="resume-company-name ms-auto">
+													<a target="_blank" href="https://sparkosol.com/"
+														class="project-link">SparkoSol</a>
+												</div>
+											</div><!--//row-->
+											<div class="resume-position-time">Nov 2025- Present</div>
+										</div><!--//resume-timeline-item-header-->
+										<div class="resume-timeline-item-desc">
+											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:
+											</h4>
+											<ul>
+												<li>Developed scalable full-stack modules using React.js, TypeScript, Express.js, and Redux Toolkit.</li>
+												<li>Built async job processing pipelines using BullMQ with Redis, improving background task reliability.</li>
+												<li>Implemented queue-based architecture using AWS SQS for distributed workload handling.</li>
+												<li>Designed and optimized PostgreSQL database workflows for high-performance data processing.</li>
+												<li>Deployed and managed services on AWS EC2 ensuring high availability and stability.</li>
+												<li>Integrated Stripe for automated billing and subscription management.</li>
+											</ul>
+
+											<h4 class="tech-heading font-weight-bold">
+												<i class="fas fa-tools"></i> Technologies used:
+											</h4>
+											<div class="tech-chips-list">
+												<span class="tech-chip">React.js</span>
+												<span class="tech-chip">TypeScript</span>
+												<span class="tech-chip">Express.js</span>
+												<span class="tech-chip">Redux Toolkit</span>
+												<span class="tech-chip">BullMQ</span>
+												<span class="tech-chip">Redis</span>
+												<span class="tech-chip">AWS SQS</span>
+												<span class="tech-chip">PostgreSQL</span>
+												<span class="tech-chip">AWS EC2</span>
+												<span class="tech-chip">Stripe</span>
+											</div>
+										</div><!--//resume-timeline-item-desc-->
+
+									</article><!--//resume-timeline-item-->
+								</div><!--//resume-timeline-->
+
+
+								<!-- VelzoSoft -->
+								<div class="resume-timeline-no-line position-relative">
+									<article class="resume-timeline-item position-relative pb-5">
+										<div class="resume-timeline-item-header mb-2">
+											<div class="d-flex flex-column flex-md-row">
+												<div class="d-flex" style="gap: 8px">
+													<h3 class="resume-position-title font-weight-bold mb-1">MERN Stack Developer</h3>
+													<span> (OnSite)</span>
+												</div>
+												<div class="resume-company-name ms-auto">
+													<a target="_blank" href="https://velzosoft.com/"
+														class="project-link">VelzoSoft</a>
+												</div>
+											</div><!--//row-->
+											<div class="resume-position-time">Oct 2024 - Nov-2025</div>
+										</div><!--//resume-timeline-item-header-->
+										<div class="resume-timeline-item-desc">
+											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:
+											</h4>
+
+											<ul>
+												<li>Built a dental lab platform with TypeScript and tRPC, reducing API response times by 40%.</li>
+												<li>Implemented Clerk Authentication, ensuring 100% security compliance with zero production incidents.</li>
+												<li>Designed hybrid data architecture (Firebase + PostgreSQL), cutting query times by 50%.</li>
+												<li>Introduced monorepo architecture, reducing build and deployment times by 25%.</li>
+												<li>Integrated Stripe for automated billing and payments.</li>
+												<li>Developed 15+ custom features tailored to dental lab workflows.</li>
+											</ul>
+
+											<h4 class="tech-heading font-weight-bold">
+												<i class="fas fa-tools"></i> Technologies used:
+											</h4>
+											<div class="tech-chips-list">
+												<span class="tech-chip">TypeScript</span>
+												<span class="tech-chip">tRPC</span>
+												<span class="tech-chip">Clerk</span>
+												<span class="tech-chip">Firebase</span>
+												<span class="tech-chip">PostgreSQL</span>
+												<span class="tech-chip">Monorepo</span>
+												<span class="tech-chip">Stripe</span>
+											</div>
+										</div><!--//resume-timeline-item-desc-->
+
+									</article><!--//resume-timeline-item-->
+								</div><!--//resume-timeline-->
+
+								<!-- Atrule Technologies -->
+								<div class="resume-timeline-no-line position-relative">
+									<article class="resume-timeline-item position-relative pb-5">
+										<div class="resume-timeline-item-header mb-2">
+											<div class="d-flex flex-column flex-md-row">
+												<div class="d-flex" style="gap: 8px">
+													<h3 class="resume-position-title font-weight-bold mb-1">MERN Stack Developer</h3>
+													<span> (OnSite)</span>
+												</div>
+												<div class="resume-company-name ms-auto">
+													<a target="_blank" href="https://atrule.com/"
+														class="project-link">Atrule Technologies</a>
+												</div>
+											</div><!--//row-->
+											<div class="resume-position-time">May 2024 - Oct 2024</div>
+
+										</div><!--//resume-timeline-item-header-->
+										<div class="resume-timeline-item-desc">
+											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:
+											</h4>
+											<ul>
+												<li>Built and maintained web apps with Next.js, React.js, Redux, Tailwind, and more.</li>
+												<li>Improved user engagement by 20% on the Pakistani Brands dashboard.</li>
+												<li>Automated data extraction with Puppeteer, scraping 15+ sites with 95% accuracy.</li>
+												<li>Engineered scalable back-end with Node.js, Express.js, and RESTful APIs, reducing latency by 40%.</li>
+												<li>Integrated WebSocket for real-time chat, achieving 99% message delivery success.</li>
+												<li>Optimized database performance (MongoDB, MySQL) with Mongoose, Prisma, and Sequelize, cutting query times by 35%.</li>
+											</ul>
+
+											<h4 class="tech-heading font-weight-bold">
+												<i class="fas fa-tools"></i> Technologies used:
+											</h4>
+											<div class="tech-chips-list">
+												<span class="tech-chip">Next.js</span>
+												<span class="tech-chip">React.js</span>
+												<span class="tech-chip">Redux</span>
+												<span class="tech-chip">Tailwind CSS</span>
+												<span class="tech-chip">Node.js</span>
+												<span class="tech-chip">Express.js</span>
+												<span class="tech-chip">Puppeteer</span>
+												<span class="tech-chip">WebSocket</span>
+												<span class="tech-chip">MongoDB</span>
+												<span class="tech-chip">MySQL</span>
+												<span class="tech-chip">Prisma</span>
+												<span class="tech-chip">Sequelize</span>
+											</div>
+										</div><!--//resume-timeline-item-desc-->
+
+									</article><!--//resume-timeline-item-->
+								</div><!--//resume-timeline-->
+
+
+							</div>
+						</section><!--//experience-section-->
+					</div>
+					<div class="col-lg-3">
+						<section class="resume-section projects-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Projects</h2>
+							<div class="resume-section-content">
+								<h3 class="resume-position-title font-weight-bold mb-3">
+									AI PRODUCTS FEATURED
+								</h3>
+								<div class="project-list">
+									<div class="project-item">
+										<a class="project-link" target="_blank" href="https://www.heyjasmin.co/">
+											<div class="project-icon-box">
+												<i class="fas fa-robot text-primary" style="font-size: 0.7rem;"></i>
+											</div>
+											<div class="flex-grow-1">
+												<div class="project-name">heyJasmin SaaS <span class="project-tag">(SaaS)</span></div>
+											</div>
+											<i class="fas fa-chevron-right project-arrow"></i>
+										</a>
+									</div>
+
+									<div class="project-item">
+										<a class="project-link" target="_blank" href="https://ahsangpt.netlify.app/">
+											<div class="project-icon-box">
+												<i class="fas fa-brain text-primary" style="font-size: 0.7rem;"></i>
+											</div>
+											<div class="flex-grow-1">
+												<div class="project-name">Ahsan AI <span class="project-tag">(AI Chat)</span></div>
+											</div>
+											<i class="fas fa-chevron-right project-arrow"></i>
+										</a>
+									</div>
+
+									<div class="project-item">
+										<div class="project-link">
+											<div class="project-icon-box">
+												<i class="fas fa-mobile-alt text-primary" style="font-size: 0.7rem;"></i>
+											</div>
+											<div class="flex-grow-1">
+												<div class="project-name">ChiefAI App <span class="project-tag">(Mobile AI)</span></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="project-item">
+										<div class="project-link">
+											<div class="project-icon-box">
+												<i class="fas fa-home text-primary" style="font-size: 0.7rem;"></i>
+											</div>
+											<div class="flex-grow-1">
+												<div class="project-name">VisionEstates <span class="project-tag">(Real Estate)</span></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="project-item">
+										<div class="project-link">
+											<div class="project-icon-box">
+												<i class="fas fa-cloud-sun text-primary" style="font-size: 0.7rem;"></i>
+											</div>
+											<div class="flex-grow-1">
+												<div class="project-name">Weather App <span class="project-tag">(React)</span></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="project-item">
+										<div class="project-link">
+											<div class="project-icon-box">
+												<i class="fas fa-newspaper text-primary" style="font-size: 0.7rem;"></i>
+											</div>
+											<div class="flex-grow-1">
+												<div class="project-name">News App <span class="project-tag">(React)</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="agentic-description mt-3 mb-0 p-2">
+									<p class="mb-0" style="font-size: 0.8rem; line-height: 1.4;">Experienced in building <strong>AI-driven</strong> systems using <strong>Agentic Workflows</strong> and <strong>LLM Integrations</strong>.</p>
+								</div>
+							</div>
+						</section>
+
+						<section class="resume-section skills-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills</h2>
+							<div class="resume-section-content">
+								<div class="skills-wrapper">
+									<!-- AI Tools -->
+									<div class="skills-category">
+										<h3 class="skills-category__title">AI Tools</h3>
+										<div class="skills-list-grid">
+											<div class="skill-row">
+												<span class="skill-label">Cursor / Antigravity</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">ChatGPT / Gemini</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">Claude / Perplexity</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">Copilot / DeepSeek</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">OpenRouter / OpenAI</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Frontend -->
+									<div class="skills-category">
+										<h3 class="skills-category__title">Frontend</h3>
+										<div class="skills-list-grid">
+											<div class="skill-row">
+												<span class="skill-label">JavaScript / TypeScript</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">Next.js / React.js</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">HTML / CSS / SASS</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">Tailwind / Shadcn</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">React Native / Bootstrap</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">Redux / Zustand</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Backend -->
+									<div class="skills-category">
+										<h3 class="skills-category__title">Backend</h3>
+										<div class="skills-list-grid">
+											<div class="skill-row">
+												<span class="skill-label">Node / Nest / Express</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">VAPI / Twilio / Stripe</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">Postgres / MySQL</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">MongoDB / Mongoose</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">Prisma / Drizzle</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">tRPC / GraphQL / REST</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">Clerk / Firebase</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- DevOps & Tools -->
+									<div class="skills-category">
+										<h3 class="skills-category__title">DevOps & Tools</h3>
+										<div class="skills-list-grid">
+											<div class="skill-row">
+												<span class="skill-label">Docker / AWS EC2</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">SQS / BullMQ / Redis</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">PM2 / VPS / Git</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">npm / Yarn / PNPM</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">Postman / Swagger</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+												</div>
+											</div>
+											<div class="skill-row">
+												<span class="skill-label">Monorepo / Puppeteer</span>
+												<div class="skill-dots">
+													<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="resume-section education-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+								<i class="fas fa-graduation-cap me-2"></i> Education
+							</h2>
+							<div class="resume-section-content">
+								<ul class="list-unstyled">
+									<li class="mb-2">
+										<div class="resume-degree font-weight-bold">Computer Science and Engineering</div>
+										<div class="resume-degree-org">NFC Institute of Engineering and Technology</div>
+										<div class="resume-degree-time text-muted">Aug 2020 – May 2024</div>
+										<div class="resume-degree-time text-muted">CGPA: 3.88</div>
+									</li>
+								</ul>
+							</div>
+						</section>
+
+						<section class="resume-section language-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+								<i class="fas fa-language me-2"></i> Language
+							</h2>
+							<div class="resume-section-content">
+								<div class="tech-chips-list">
+									<div class="tech-chip">
+										Urdu <span class="ms-2 opacity-75 fw-normal" style="font-size: 0.65rem;">(Native)</span>
+									</div>
+									<div class="tech-chip">
+										English <span class="ms-2 opacity-75 fw-normal" style="font-size: 0.65rem;">(Intermediate)</span>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="resume-section interests-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+								<i class="fas fa-heart me-2"></i> Interests
+							</h2>
+							<div class="resume-section-content">
+								<div class="tech-chips-list">
+									<span class="tech-chip"><i class="fas fa-robot me-2 opacity-75"></i> AI</span>
+									<span class="tech-chip"><i class="fas fa-laptop-code me-2 opacity-75"></i> Web Dev</span>
+									<span class="tech-chip"><i class="fas fa-mobile-alt me-2 opacity-75"></i> Mobile Dev</span>
+									<span class="tech-chip"><i class="fas fa-gamepad me-2 opacity-75"></i> Gaming</span>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div><!--//row-->
+			</div><!--//resume-body-->
+
+		</div>
+	</article>
+
+
+</body>
+
+</html>
