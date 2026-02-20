@@ -1,3 +1,5 @@
 .DS_Store
 config.codekit
 config.codekit3
+config.bat
+node_modules
